@@ -64,3 +64,17 @@ img[src*='#center'] {
 </style>
 
 # Nastavenie XAMPP
+
+<center>Damián Nadžady Marek Šafařík Adrian Fáber</center>
+
+# Obsah
+<!-- Obsah vygenerovať neskor-->
+
+## Nastavenie pre executable programy v CMD
+
+Naprv si musíme skontrolovať ktoré cesty majú v sebe executable property pre zapnutie programov, ak v tomto výpise nemáme cestu k programu ktorý chceme spustit cez konzolu tak ho nebudeme mocť spustiť
+
+Do CMD napísemme príkaz echo %PATH%
+ 
+
+
