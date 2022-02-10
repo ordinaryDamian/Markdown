@@ -84,7 +84,24 @@ Ak chceme pridať executable cesty naprv potrebujeme zistiť kde sa nachádza .e
 
 ![echo PATH](./images/ApplicationFrameHost_pj5wUYsKrQ.png#center)
 
+Pre pridanie cesty stlacime `Windows + R` a zadáme daný príkaz.
 
+![echo PATH](./images/explorer_lDulGpQVNR.png#center)
  
+![echo PATH](./images/SystemPropertiesComputerName_1XK0tRg1aq.png#center)
 
+![echo PATH](./images/SystemPropertiesComputerName_MGrynUjVVV.png#center)
 
+Klikneme na Path a upraviť a pridáme novú cestu, zvýraznené cesty sú cesty k mysql a php
+
+## Pripojenie do databazy a orientovanie v nej 
+
+Ujistime sa že máme zapnutý MySQL a Apache server
+
+![echo PATH](./images/xampp-control_givBTwII7s.png#center)
+
+Pripojíme sa na databázu ako `root` používateľ
+
+príkaz: `mysql -uroot -p`
+
+![echo PATH](./images/WindowsTerminal_rahEHSu4Pk.png#center)
