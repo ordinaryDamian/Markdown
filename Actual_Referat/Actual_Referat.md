@@ -75,7 +75,16 @@ img[src*='#center'] {
 Naprv si musíme skontrolovať ktoré cesty majú v sebe executable property pre zapnutie programov, ak v tomto výpise nemáme cestu k programu ktorý chceme spustit cez konzolu tak ho nebudeme mocť spustiť.
 
 Do `CMD` napísemme príkaz `echo %PATH%` aby sme zistili aké cesty máme povolené.
-![vs code plugins](./img/vs_code_plugins.png#center)
+
+![echo PATH](./images/WindowsTerminal_TpcCQFeGjS.png#center)
+
+Ak chceme pridať executable cesty naprv potrebujeme zistiť kde sa nachádza .exe program ktorý hladáme
+
+![echo PATH](./images/ApplicationFrameHost_ynTOqvZfCc.png#center)
+
+![echo PATH](./images/ApplicationFrameHost_pj5wUYsKrQ.png#center)
+
+
  
 
 
