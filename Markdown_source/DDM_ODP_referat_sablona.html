@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DDM_ODP_referat_sablona.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<!-- V markdowne je možné použiť aj CSS -->
+<style>
+
+/* 
+Cislovanie kapitol pomocou CSS:
+
+https://gist.github.com/patik/89ee6092c72a9e39950445c01598517a */
+
+h1 { counter-reset: h2counter; }
+h2 { counter-reset: h3counter; }
+h3 { counter-reset: h4counter; }
+h4 { counter-reset: h5counter; }
+h5 { counter-reset: h6counter; }
+h6 {}
+
+h2:before {
+    counter-increment: h2counter;
+    content: counter(h2counter) ".\0000a0\0000a0";
+}
+
+h3:before {
+    counter-increment: h3counter;
+    content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
+}
+
+h4:before {
+    counter-increment: h4counter;
+    content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) ".\0000a0\0000a0";
+}
+
+h5:before {
+    counter-increment: h5counter;
+    content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "." counter(h5counter) ".\0000a0\0000a0";
+}
+
+h6:before {
+    counter-increment: h6counter;
+    content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "." counter(h5counter) "." counter(h6counter) ".\0000a0\0000a0";
+}
+
+
+
+
+/*
+Centrovanie obrazkov
+https://stackoverflow.com/questions/255170/markdown-and-image-alignment/43691462#43691462
+
+https://stackoverflow.com/questions/12090472/how-do-i-center-an-image-in-the-readme-md-file-on-github
+*/
+
+img[src*='#left'] {
+    float: left;
+}
+img[src*='#right'] {
+    float: right;
+}
+img[src*='#center'] {
+    display: block;
+    margin: auto;
+}
+
+
+</style>
+<h1 id="typografia-webov%C3%BDch-str%C3%A1nok">Typografia webových stránok</h1>
+<p>Autor1, Autor2, Autor3</p>
+<div style="page-break-after: always;"></div>
+<h1 id="obsah">Obsah</h1>
+<ul>
+<li><a href="#typografia-webov%C3%BDch-str%C3%A1nok">Typografia webových stránok</a></li>
+<li><a href="#obsah">Obsah</a>
+<ul>
+<li><a href="#markdown-flavors">Markdown flavors</a></li>
+<li><a href="#markdown-cheat-sheet">Markdown cheat sheet</a></li>
+<li><a href="#odkazy">Odkazy</a></li>
+<li><a href="#nadpisy">Nadpisy</a>
+<ul>
+<li><a href="#nadpis-3-%C3%BArovne">Nadpis 3 úrovne</a>
+<ul>
+<li><a href="#nadpis-4-%C3%BArovne">Nadpis 4 úrovne</a></li>
+</ul>
+</li>
+<li><a href="#nadpis-3-%C3%BArovne-1">Nadpis 3 úrovne</a></li>
+</ul>
+</li>
+<li><a href="#unordered-list">Unordered list</a></li>
+<li><a href="#horizontal-rule">Horizontal rule</a></li>
+<li><a href="#tabu%C4%BEka">Tabuľka</a></li>
+<li><a href="#pr%C3%ADklad-pou%C5%BEitia-k%C3%B3du">Príklad použitia kódu</a></li>
+<li><a href="#pr%C3%ADklad-pou%C5%BEitia-obr%C3%A1zkov-a-centrovania">Príklad použitia obrázkov a centrovania</a></li>
+<li><a href="#pr%C3%ADklad-pou%C5%BEitia-html-tagov">Príklad použitia HTML tagov</a></li>
+<li><a href="#pou%C5%BEitie-vo-firefoxe">Použitie vo Firefoxe</a></li>
+<li><a href="#vs-code-pluginy">VS code pluginy</a>
+<ul>
+<li><a href="#vs-code-export-do-pdf">VS code export do PDF</a></li>
+<li><a href="#vs-code-preview">VS code preview</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="markdown-flavors">Markdown flavors</h2>
+<p>Existujú rôzne verzie markdownu tzv. flavours, ktoré sa však líšia minimálne.
+Koncovka súboru je md</p>
+<p>https://gist.github.com/vimtaai/99f8c89e7d3d02a362117284684baa0f</p>
+<p>https://github.com/commonmark/commonmark-spec/wiki/markdown-flavors</p>
+<p>https://github.com/markdown/markdown.github.com/wiki/Implementations</p>
+<h2 id="markdown-cheat-sheet">Markdown cheat sheet</h2>
+<h2 id="odkazy">Odkazy</h2>
+<p><a href="https://www.markdownguide.org/cheat-sheet/">Odkaz na markdown cheat sheet</a></p>
+<h2 id="nadpisy">Nadpisy</h2>
+<h3 id="nadpis-3-%C3%BArovne">Nadpis 3 úrovne</h3>
+<h4 id="nadpis-4-%C3%BArovne">Nadpis 4 úrovne</h4>
+<h3 id="nadpis-3-%C3%BArovne">Nadpis 3 úrovne</h3>
+<h2 id="unordered-list">Unordered list</h2>
+<ul>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+</ul>
+<h2 id="horizontal-rule">Horizontal rule</h2>
+<p>Text pred oddeľovacou čiarou</p>
+<hr>
+<p>Text za oddeľovacou čiarou</p>
+<h2 id="tabu%C4%BEka">Tabuľka</h2>
+<table>
+<thead>
+<tr>
+<th>Syntax</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Header</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>Paragraph</td>
+<td>Text</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pr%C3%ADklad-pou%C5%BEitia-k%C3%B3du">Príklad použitia kódu</h2>
+<p>HTML</p>
+<pre class="hljs"><code><div><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"./dog.jpg"</span>&gt;</span>
+</div></code></pre>
+<p>C</p>
+<pre class="hljs"><code><div><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+	<span class="hljs-comment">// printf je funkcia ktora v tomto pripade berie jeden arugment a tym je retazec</span>
+    <span class="hljs-comment">// retazec sa uzatvara do dvojitych uvodzoviek</span>
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Hello world"</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</div></code></pre>
+<p>Python</p>
+<pre class="hljs"><code><div><span class="hljs-comment">#!/usr/bin/python3</span>
+x=<span class="hljs-number">10</span>
+<span class="hljs-keyword">if</span> <span class="hljs-number">9</span> &lt; x:
+  print(<span class="hljs-string">"9 je mensie ako x"</span>)
+<span class="hljs-keyword">else</span>:
+  print(<span class="hljs-string">"9 je vacsie ako x"</span>)
+}
+</div></code></pre>
+<h2 id="pr%C3%ADklad-pou%C5%BEitia-obr%C3%A1zkov-a-centrovania">Príklad použitia obrázkov a centrovania</h2>
+<p>text a obrázok je defaultne zarovnaný na ľavú stranu</p>
+</br>
+<p><img src="./img/i_love_markdown.png" alt="i love markdown"></p>
+<center>text a obrázok vycentrovany na stred</center>
+<!-- príklad na použitie HTML tagov pre nový riadok -->
+</br>
+<p><img src="./img/vs_code_plugins.png#center" alt="vs code plugins"></p>
+<h2 id="pr%C3%ADklad-pou%C5%BEitia-html-tagov">Príklad použitia HTML tagov</h2>
+<p><mark>what is DataBase</mark></p>
+<h2 id="pou%C5%BEitie-vo-firefoxe">Použitie vo Firefoxe</h2>
+<ul>
+<li>súbor s koncovkou MD (markdwon) sa dá zobraziť aj vo webovom prehliadači. Treba však doinštalovať nasledujúci plugin:</li>
+</ul>
+<p><img src="./img/firefox_plugin_markdown_viewer.png" alt="firefox"></p>
+<h2 id="vs-code-pluginy">VS code pluginy</h2>
+<p>Markdown sa píše v akomkoľvek textovom editore, je však fajn mať pluginy ktoré to uľahčujú. Posledný plugin je vypnutý</p>
+<p><img src="./img/vs_code_plugins.png#center" alt="vs code plugins"></p>
+<h3 id="vs-code-export-do-pdf">VS code export do PDF</h3>
+<ul>
+<li>stlačiť F1 alebo Ctrl+Shift+P</li>
+<li>napísať: markdown-pdf</li>
+</ul>
+<h3 id="vs-code-preview">VS code preview</h3>
+<p><img src="./img/vs_code_preview.png#center" alt="vs code plugins"></p>
+
+</body>
+</html>
