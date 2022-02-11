@@ -78,7 +78,7 @@ Do `CMD` napísemme príkaz `echo %PATH%` aby sme zistili aké cesty máme povol
 
 ![echo PATH](./images/WindowsTerminal_TpcCQFeGjS.png#center)
 
-Ak chceme pridať executable cesty naprv potrebujeme zistiť kde sa nachádza .exe program ktorý hladáme
+Ak chceme pridať executable cesty naprv potrebujeme zistiť kde sa nachádza `.exe` program ktorý hladáme
 
 ![echo PATH](./images/ApplicationFrameHost_ynTOqvZfCc.png#center)
 
