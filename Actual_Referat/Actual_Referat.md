@@ -105,3 +105,5 @@ Pripojíme sa na databázu ako `root` používateľ
 príkaz: `mysql -uroot -p`
 
 ![echo PATH](./images/WindowsTerminal_rahEHSu4Pk.png#center)
+
+pre `root` používateľa vieme zistiť heslo a IP adresu na ktorú by sa mal pripojiť v phpMyAdmin configu 
