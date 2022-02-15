@@ -110,11 +110,11 @@ príkaz: `mysql -uroot -p`
 pre `root` používateľa vieme zistiť heslo a IP adresu na ktorú by sa mal pripojiť v phpMyAdmin configu
 
 ![echo PATH](./images/notepad_I0QaT74f4X.png#center)
-
+Databázu už máme vytvorenú tak si do nej vytvoríme tabuľku ktorá bude obsahovat 2 polia.
 ![echo PATH](./images/Clipboard.jpg)
-
+Prvé poľe bude ID ktoré je základom takmer každej databázy. Nastavíme si typ integer lebo ID sa udáva v číslachm dlžku si nastavíme na 4 cifry to by malo zďaleka stačiť a ešte si nastavíme auto increment aby sa nám ID číslo samo zväčšovalo. Ďalší riadok si spravíme poľe "Name" ktoré bude mať kapacitu 30 znakov a ako typ si dáme samozrejme text.
 ![echo PATH](./images/Clipboard1.jpg)
-
+Tu si môžme pozrieť SQL kód ktorý sa nám vygeneroval a môžme si ho skontrolovať. Potom už len stlačíme Uložiť a vytvorí sa nám tabuľka.
 ![echo PATH](./images/Clipboard2.jpg)
 
 ![echo PATH](./images/Clipboard3.jpg)
