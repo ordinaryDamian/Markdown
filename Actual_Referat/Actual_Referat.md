@@ -68,6 +68,7 @@ img[src*='#center'] {
 <center>Damián Nadžady Marek Šafařík Adrian Fáber</center>
 
 # Obsah
+
 <!-- Obsah vygenerovať neskor-->
 
 ## Nastavenie pre executable programy v CMD
@@ -87,14 +88,14 @@ Ak chceme pridať executable cesty naprv potrebujeme zistiť kde sa nachádza `.
 Pre pridanie cesty stlacime `Windows + R` a zadáme daný príkaz.
 
 ![echo PATH](./images/explorer_lDulGpQVNR.png#center)
- 
+
 ![echo PATH](./images/SystemPropertiesComputerName_1XK0tRg1aq.png#center)
 
 ![echo PATH](./images/SystemPropertiesComputerName_MGrynUjVVV.png#center)
 
 Klikneme na Path a upraviť a pridáme novú cestu, zvýraznené cesty sú cesty k mysql a php
 
-## Pripojenie do databazy a orientovanie v nej 
+## Pripojenie do databazy a orientovanie v nej
 
 Ujistime sa že máme zapnutý MySQL a Apache server
 
@@ -106,6 +107,20 @@ príkaz: `mysql -uroot -p`
 
 ![echo PATH](./images/WindowsTerminal_rahEHSu4Pk.png#center)
 
-pre `root` používateľa vieme zistiť heslo a IP adresu na ktorú by sa mal pripojiť v phpMyAdmin configu 
+pre `root` používateľa vieme zistiť heslo a IP adresu na ktorú by sa mal pripojiť v phpMyAdmin configu
 
 ![echo PATH](./images/notepad_I0QaT74f4X.png#center)
+
+![echo PATH](./images/Clipboard.jpg)
+
+![echo PATH](./images/Clipboard1.jpg)
+
+![echo PATH](./images/Clipboard2.jpg)
+
+![echo PATH](./images/Clipboard3.jpg)
+
+![echo PATH](./images/Clipboard4.jpg)
+
+![echo PATH](./images/Clipboard5.jpg)
+
+![echo PATH](./images/Clipboard6.jpg)
