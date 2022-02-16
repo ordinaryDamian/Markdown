@@ -115,11 +115,11 @@ Databázu už máme vytvorenú tak si do nej vytvoríme tabuľku ktorá bude obs
 
 ![echo PATH](./images/Clipboard.jpg)
 
-Prvé poľe bude ID ktoré je základom takmer každej databázy. Nastavíme si typ integer lebo ID sa udáva v číslachm dlžku si nastavíme na 4 cifry to by malo zďaleka stačiť a ešte si nastavíme auto increment aby sa nám ID číslo samo zväčšovalo. Ďalší riadok si spravíme poľe "Name" ktoré bude mať kapacitu 30 znakov a ako typ si dáme samozrejme text.
+Prvé pole bude `ID` ktoré je základom takmer každej databázy. Nastavíme si typ integer lebo `ID` sa udáva v číslach dlžku si nastavíme na 4 cifry to by malo zďaleka stačiť a ešte si nastavíme `auto increment` aby sa nám ID číslo samo zväčšovalo. Ďalší riadok si spravíme poľe `Name` ktoré bude mať kapacitu 30 znakov a ako typ si dáme samozrejme text.
 
 ![echo PATH](./images/Clipboard1.jpg)
 
-Tu si môžme pozrieť SQL kód ktorý sa nám vygeneroval a môžme si ho skontrolovať. Potom už len stlačíme Uložiť a vytvorí sa nám tabuľka.
+Tu si môžme pozrieť SQL kód ktorý sa nám vygeneroval a môžme si ho skontrolovať. Potom už len stlačíme `Uložiť` a vytvorí sa nám tabuľka.
 
 ![echo PATH](./images/Clipboard2.jpg)
 
