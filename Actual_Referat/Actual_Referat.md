@@ -85,7 +85,7 @@ Ak chceme pridať executable cesty naprv potrebujeme zistiť kde sa nachádza `.
 
 ![echo PATH](./images/ApplicationFrameHost_pj5wUYsKrQ.png#center)
 
-Pre pridanie cesty stlacime `Windows + R` a zadáme daný príkaz.
+Pre pridanie cesty stlacime `Windows + R` a zadáme daný príkaz. Následne pokračujeme podľa šipiek v obrázkoch.
 
 ![echo PATH](./images/explorer_lDulGpQVNR.png#center)
 
