@@ -95,6 +95,14 @@ Pre pridanie cesty stlacime `Windows + R` a zadáme daný príkaz. Následne pok
 
 Klikneme na Path a upraviť a pridáme novú cestu, zvýraznené cesty sú cesty k mysql a php
 
+## Zapnutie PHP v CMD
+
+Vďaka pridaniu cesty k programu `php.exe` vieme v CMD execuovať php súbory alebo zapnúť samotné PHP
+
+![echo PATH](./images/WindowsTerminal_wRMf4cqHnH.png#center)
+
+Prvým príkazom sme inicializovali PHP a druhým sme spustili daný súbor pomocou prikazu PHP v danej ceste
+
 ## Pripojenie do databazy a orientovanie v nej
 
 Ujistime sa že máme zapnutý MySQL a Apache server
