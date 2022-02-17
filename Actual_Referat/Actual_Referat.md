@@ -68,8 +68,15 @@ img[src*='#center'] {
 <center>Damián Nadžady Marek Šafařík Adrian Fáber</center>
 
 # Obsah
-
-<!-- Obsah vygenerovať neskor-->
+[Nastavenie XAMPP](#nastavenie-xampp)
+- [Nastavenie XAMPP](#nastavenie-xampp)
+- [Obsah](#obsah)
+  - [Nastavenie pre executable programy v CMD](#nastavenie-pre-executable-programy-v-cmd)
+  - [Zapnutie PHP v CMD](#zapnutie-php-v-cmd)
+  - [Pripojenie do databazy a orientovanie v nej](#pripojenie-do-databazy-a-orientovanie-v-nej)
+<!-- Obsah vygenerovať neskor
+ak mas extension tak CTRL+SHIFT+P a napisat create table of content
+-->
 
 ## Nastavenie pre executable programy v CMD
 
@@ -148,5 +155,7 @@ Tu môžeme vidieť ako sa nám spokojne zapísali naše mená do tabuľky.
 
 ![echo PATH](./images/Clipboard6.jpg)
 
+
+TODO:
 <!-- Pridat aj veci dajake zo zaciatku roka co sme robili a aj dorobit fotky do pondelka (PID porty atd)
 Potom este pridat dajaky problem co sme mali -->
