@@ -39,9 +39,6 @@ h6:before {
     content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "." counter(h5counter) "." counter(h6counter) ".\0000a0\0000a0";
 }
 
-
-
-
 /*
 Centrovanie obrazkov
 https://stackoverflow.com/questions/255170/markdown-and-image-alignment/43691462#43691462
@@ -59,8 +56,6 @@ img[src*='#center'] {
     display: block;
     margin: auto;
 }
-
-
 </style>
 
 # Nastavenie XAMPP
@@ -156,6 +151,6 @@ Tu môžeme vidieť ako sa nám spokojne zapísali naše mená do tabuľky.
 ![echo PATH](./images/Clipboard6.jpg)
 
 
-TODO:
+<!-- TODO: -->
 <!-- Pridat aj veci dajake zo zaciatku roka co sme robili a aj dorobit fotky do pondelka (PID porty atd)
 Potom este pridat dajaky problem co sme mali -->
