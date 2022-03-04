@@ -151,6 +151,11 @@ Tu môžeme vidieť ako sa nám spokojne zapísali naše mená do tabuľky.
 ![echo PATH](./images/Clipboard6.jpg)
 
 
-<!-- TODO: -->
+<!-- TOD- [Nastavenie XAMPP](#nastavenie-xampp)
+- [Nastavenie XAMPP](#nastavenie-xampp)
+- [Obsah](#obsah)
+  - [Nastavenie pre executable programy v CMD](#nastavenie-pre-executable-programy-v-cmd)
+  - [Zapnutie PHP v CMD](#zapnutie-php-v-cmd)
+  - [Pripojenie do databazy a orientovanie v nej](#pripojenie-do-databazy-a-orientovanie-v-nej)
 <!-- Pridat aj veci dajake zo zaciatku roka co sme robili a aj dorobit fotky do pondelka (PID porty atd)
 Potom este pridat dajaky problem co sme mali -->
