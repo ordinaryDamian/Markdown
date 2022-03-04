@@ -69,6 +69,7 @@ img[src*='#center'] {
   - [Nastavenie pre executable programy v CMD](#nastavenie-pre-executable-programy-v-cmd)
   - [Zapnutie PHP v CMD](#zapnutie-php-v-cmd)
   - [Pripojenie do databazy a orientovanie v nej](#pripojenie-do-databazy-a-orientovanie-v-nej)
+  - [PID porty](#PID_porty)
 <!-- Obsah vygenerovať neskor
 ak mas extension tak CTRL+SHIFT+P a napisat create table of content
 -->
@@ -150,6 +151,31 @@ Tu môžeme vidieť ako sa nám spokojne zapísali naše mená do tabuľky.
 
 ![echo PATH](./images/Clipboard6.jpg)
 
+# PID porty
+
+## Príkaz Netstat
+
+Ak chcete začať, otvorte príkazový riadok kliknutím na tlačidlo `Štart` a zadaním príkazu `cmd` . V príkazovom okne pokračujte a napíšte nasledujúci príkaz:
+<pre class="hljs"><code><div><span class="hljs-string">netstat -a -n -o</span>
+</div></code></pre>
+
+V príkaze vyššie je parametrom -o to, čo pridá PID na koniec tabuľky. Stlačte kláves Enter a mali by ste vidieť niečo takéto:
+
+![echo PATH](./images/pid1.png)
+
+Môžete vidieť port, ktorý sa používa v druhom stĺpci Local Address. Po dvojbodke sa zobrazí číslo portu. Uvidíte aj niektoré porty a niektoré PID uvedené viac ako raz. Je to preto, lebo jeden proces môže používať rovnaké číslo portu na rôznych protokoloch, ako je TCP, UDP atď.
+
+Teraz vidíte názov procesu, ktorý používa daný port, prejdite do Správcu úloh stlačením klávesov `CTRL + SHIFT + ESC` a potom kliknite na kartu <b>Proces</b> . V systéme Windows 10 by ste mali kliknúť na kartu <b>Podrobnosti</b> .
+
+V predvolenom nastavení správca úloh nezobrazuje ID procesu, takže musíte kliknúť na položku <b>Zoraziť</b> a potom <b>Vybraťt stĺpce</b> . V systéme Windows 10 je ID procesu už uvedené, takže môžete preskočiť nižšie uvedené kroky.
+
+Pokračujte a začiarknite políčko <b>PID (Identifikátor procesu)</b> a potom kliknite na tlačidlo <b>OK</b>.
+
+![echo PATH](./images/pid2.png)
+
+Teraz by ste mali vidieť aj PID vedľa názvu procesu v správcovi úloh. Môžete kliknúť na záhlavie stĺpca a rýchlo zoradiť zoznam podľa PID, čo vám pomôže nájsť proces, ktorý hľadáte.
+
+![echo PATH](./images/pid3.png)
 
 <!-- TOD- [Nastavenie XAMPP](#nastavenie-xampp)
 - [Nastavenie XAMPP](#nastavenie-xampp)
