@@ -150,7 +150,7 @@ Tu môžeme vidieť ako sa nám spokojne zapísali naše mená do tabuľky.
 
 ![echo PATH](./images/Clipboard6.jpg)
 
-#PID porty
+# PID porty
 
 
 <!-- TODO: -->
