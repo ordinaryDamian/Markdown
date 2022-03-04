@@ -152,6 +152,10 @@ Tu môžeme vidieť ako sa nám spokojne zapísali naše mená do tabuľky.
 
 # PID porty
 
+## Príkaz Netstat
+
+Ak chcete začať, otvorte príkazový riadok kliknutím na tlačidlo `Štart` a zadaním príkazu `cmd` . V príkazovom okne pokračujte a napíšte nasledujúci príkaz:
+
 
 <!-- TODO: -->
 <!-- Pridat aj veci dajake zo zaciatku roka co sme robili a aj dorobit fotky do pondelka (PID porty atd)
