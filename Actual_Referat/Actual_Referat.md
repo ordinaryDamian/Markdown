@@ -150,6 +150,8 @@ Tu môžeme vidieť ako sa nám spokojne zapísali naše mená do tabuľky.
 
 ![echo PATH](./images/Clipboard6.jpg)
 
+#PID porty
+
 
 <!-- TODO: -->
 <!-- Pridat aj veci dajake zo zaciatku roka co sme robili a aj dorobit fotky do pondelka (PID porty atd)
