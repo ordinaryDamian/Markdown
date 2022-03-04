@@ -69,7 +69,7 @@ img[src*='#center'] {
   - [Nastavenie pre executable programy v CMD](#nastavenie-pre-executable-programy-v-cmd)
   - [Zapnutie PHP v CMD](#zapnutie-php-v-cmd)
   - [Pripojenie do databazy a orientovanie v nej](#pripojenie-do-databazy-a-orientovanie-v-nej)
--   [PID porty](#pid-porty)
+- [PID porty](#pid-porty)
   - [Príkaz Netstat](#príkaz-netstat)
 <!-- Obsah vygenerovať neskor
 ak mas extension tak CTRL+SHIFT+P a napisat create table of content
