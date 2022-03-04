@@ -69,7 +69,8 @@ img[src*='#center'] {
   - [Nastavenie pre executable programy v CMD](#nastavenie-pre-executable-programy-v-cmd)
   - [Zapnutie PHP v CMD](#zapnutie-php-v-cmd)
   - [Pripojenie do databazy a orientovanie v nej](#pripojenie-do-databazy-a-orientovanie-v-nej)
-  - [PID porty](#PID_porty)
+- [PID porty](#pid-porty)
+  - [Príkaz Netstat](#príkaz-netstat)
 <!-- Obsah vygenerovať neskor
 ak mas extension tak CTRL+SHIFT+P a napisat create table of content
 -->
@@ -177,11 +178,6 @@ Teraz by ste mali vidieť aj PID vedľa názvu procesu v správcovi úloh. Môž
 
 ![echo PATH](./images/pid3.png)
 
-<!-- TOD- [Nastavenie XAMPP](#nastavenie-xampp)
-- [Nastavenie XAMPP](#nastavenie-xampp)
-- [Obsah](#obsah)
-  - [Nastavenie pre executable programy v CMD](#nastavenie-pre-executable-programy-v-cmd)
-  - [Zapnutie PHP v CMD](#zapnutie-php-v-cmd)
-  - [Pripojenie do databazy a orientovanie v nej](#pripojenie-do-databazy-a-orientovanie-v-nej)
+<!-- TOD-
 <!-- Pridat aj veci dajake zo zaciatku roka co sme robili a aj dorobit fotky do pondelka (PID porty atd)
 Potom este pridat dajaky problem co sme mali -->
