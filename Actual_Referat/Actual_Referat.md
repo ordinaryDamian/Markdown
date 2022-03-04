@@ -162,6 +162,18 @@ V príkaze vyššie je parametrom -o to, čo pridá PID na koniec tabuľky. Stla
 
 ![echo PATH](./images/pid1.png)
 
+Môžete vidieť port, ktorý sa používa v druhom stĺpci Local Address. Po dvojbodke sa zobrazí číslo portu. Uvidíte aj niektoré porty a niektoré PID uvedené viac ako raz. Je to preto, lebo jeden proces môže používať rovnaké číslo portu na rôznych protokoloch, ako je TCP, UDP atď.
+
+Teraz vidíte názov procesu, ktorý používa daný port, prejdite do Správcu úloh stlačením klávesov `CTRL + SHIFT + ESC` a potom kliknite na kartu Proces . V systéme Windows 10 by ste mali kliknúť na kartu Podrobnosti .
+
+V predvolenom nastavení správca úloh nezobrazuje ID procesu, takže musíte kliknúť na položku Zobraziť a potom vybrať stĺpce . V systéme Windows 10 je ID procesu už uvedené, takže môžete preskočiť nižšie uvedené kroky.
+
+Pokračujte a začiarknite políčko PID (Identifikátor procesu) a potom kliknite na tlačidlo OK.
+
+![echo PATH](./images/pid2.png)
+
+Teraz by ste mali vidieť aj PID vedľa názvu procesu v správcovi úloh. Môžete kliknúť na záhlavie stĺpca a rýchlo zoradiť zoznam podľa PID, čo vám pomôže nájsť proces, ktorý hľadáte.
+
 <!-- TODO: -->
 <!-- Pridat aj veci dajake zo zaciatku roka co sme robili a aj dorobit fotky do pondelka (PID porty atd)
 Potom este pridat dajaky problem co sme mali -->
