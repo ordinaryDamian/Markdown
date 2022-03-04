@@ -164,9 +164,9 @@ V príkaze vyššie je parametrom -o to, čo pridá PID na koniec tabuľky. Stla
 
 Môžete vidieť port, ktorý sa používa v druhom stĺpci Local Address. Po dvojbodke sa zobrazí číslo portu. Uvidíte aj niektoré porty a niektoré PID uvedené viac ako raz. Je to preto, lebo jeden proces môže používať rovnaké číslo portu na rôznych protokoloch, ako je TCP, UDP atď.
 
-Teraz vidíte názov procesu, ktorý používa daný port, prejdite do Správcu úloh stlačením klávesov `CTRL + SHIFT + ESC` a potom kliknite na kartu <h4 id="nadpis-4-%C3%BArovne">Proces</h4> . V systéme Windows 10 by ste mali kliknúť na kartu <h4 id="nadpis-4-%C3%BArovne">Podrobnosti</h4> .
+Teraz vidíte názov procesu, ktorý používa daný port, prejdite do Správcu úloh stlačením klávesov `CTRL + SHIFT + ESC` a potom kliknite na kartu <h4 id="nadpis-4-%C3%BArovne">Proces</h4> . V systéme Windows 10 by ste mali kliknúť na kartu Podrobnosti .
 
-V predvolenom nastavení správca úloh nezobrazuje ID procesu, takže musíte kliknúť na položku <h4 id="nadpis-4-%C3%BArovne">Zoraziť</h4> a potom <h4 id="nadpis-4-%C3%BArovne">Vybraťt stĺpce</h4> . V systéme Windows 10 je ID procesu už uvedené, takže môžete preskočiť nižšie uvedené kroky.
+V predvolenom nastavení správca úloh nezobrazuje ID procesu, takže musíte kliknúť na položku <b>Zoraziť</b> a potom Vybraťt stĺpce . V systéme Windows 10 je ID procesu už uvedené, takže môžete preskočiť nižšie uvedené kroky.
 
 Pokračujte a začiarknite políčko PID (Identifikátor procesu) a potom kliknite na tlačidlo OK.
 
