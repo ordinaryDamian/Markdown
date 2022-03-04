@@ -155,7 +155,7 @@ Tu môžeme vidieť ako sa nám spokojne zapísali naše mená do tabuľky.
 ## Príkaz Netstat
 
 Ak chcete začať, otvorte príkazový riadok kliknutím na tlačidlo `Štart` a zadaním príkazu `cmd` . V príkazovom okne pokračujte a napíšte nasledujúci príkaz:
-<pre class="hljs"><code><div><span class="hljs-tag">&lt;<span class="hljs-name"></span> <span class="hljs-attr"></span><span class="hljs-string">netstat -a -n -o</span>&gt;</span>
+<pre class="hljs"><code><div><span class="hljs-string">netstat -a -n -o</span>
 </div></code></pre>
 
 V príkaze vyššie je parametrom -o to, čo pridá PID na koniec tabuľky. Stlačte kláves Enter a mali by ste vidieť niečo takéto:
