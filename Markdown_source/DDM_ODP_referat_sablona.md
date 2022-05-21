@@ -67,7 +67,8 @@ img[src*='#center'] {
 
 Autor1, Autor2, Autor3
 
-<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;">
+</div>
 
 # Obsah
 
@@ -192,7 +193,7 @@ text a obrázok je defaultne zarovnaný na ľavú stranu
 
 ## Použitie vo Firefoxe
 
-- súbor s koncovkou MD (markdwon) sa dá zobraziť aj vo webovom prehliadači. Treba však doinštalovať nasledujúci plugin:
+- súbor s koncovkou MD (markdwon) sa dá zobraziť aj vo webovom prehliadači. Treba však doinštalovať nasledujúci plugin: Markdown viewer
 
 ![firefox](./img/firefox_plugin_markdown_viewer.png)
 
